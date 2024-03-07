@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Quiz</h1>
+        </header>
+        <div id="question-container">
+            <h2 id="question">Question</h2>
+            <form id="options">
+                <!-- Options will be dynamically generated here -->
+            </form>
+            <div class="button-row">
+                <button id="fifty-fifty" onclick="useFiftyFifty()">50-50</button>
+                
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Quiz Result</h2>
+            <p id="score">Score: </p>
+            <p id="correct-answers">Correct Answers: </p>
+            <p id="incorrect-answers">Incorrect Answers: </p>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
